@@ -33,10 +33,10 @@ except ImportError as e:
 MODEL_BASE_PATH = "../model_submission"
 
 # Construct model paths relative to MODEL_BASE_PATH
-PATH_BMRETRIEVER_410M = os.path.join(MODEL_BASE_PATH, "BMRetriever-410M")
-PATH_BMRETRIEVER_2B = os.path.join(MODEL_BASE_PATH, "BMRetriever-2B")
-PATH_GENERATOR_LLM = os.path.join(MODEL_BASE_PATH, "Qwen2.5-7B-Instruct")
-PATH_VERIFIER_LLM = os.path.join(MODEL_BASE_PATH, "MedReason-8B")
+PATH_BMRETRIEVER_410M = os.path.join(MODEL_BASE_PATH, "BMRetriever/BMRetriever-410M")
+PATH_BMRETRIEVER_2B = os.path.join(MODEL_BASE_PATH, "BMRetriever/BMRetriever-2B")
+PATH_GENERATOR_LLM = os.path.join(MODEL_BASE_PATH, "Qwen/Qwen2.5-7B-Instruct")
+PATH_VERIFIER_LLM = os.path.join(MODEL_BASE_PATH, "UCSC-VLAA/MedReason-8B")
 
 # Index paths (Keep as absolute paths, assuming mounted access on HPC/container)
 PATH_VECTOR_INDEX = os.path.join(MODEL_BASE_PATH, "stat_pubmed_indexB1.bin")
